@@ -1,0 +1,36 @@
+$color1: rgb(235, 164, 208);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  background-color: #d9afd9fb;
+  background-image: linear-gradient(
+    0deg,
+    #d9afd9 46%,
+    #97d9e1 94%,
+    #ffffff 100%
+  );
+
+  color: white;
+  transition: 0.6s ease;
+
+  &:hover {
+    scale: (1.2);
+  }
+}

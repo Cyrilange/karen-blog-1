@@ -1,0 +1,109 @@
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+
+  margin: 0 auto;
+  padding-top: 1.4rem;
+  padding-bottom: 5rem;
+  background-color: #d9afd9;
+  background-image: linear-gradient(
+    0deg,
+    #d9afd9 46%,
+    #97d9e1 94%,
+    #ffffff 100%
+  );
+
+  &:before {
+    content: url("../assets/KamachasiE\ \(2\)_preview_rev_1.png");
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    scale: (1.3);
+    top: 40px;
+    margin: 0 auto;
+
+    transform: translate(-20%);
+
+    @media (max-width: 500px) {
+      scale: (0.8);
+      top: 40px;
+    }
+  }
+
+  .nav-left {
+    display: flex;
+    width: 60%;
+    z-index: 200;
+
+    & ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      & li {
+        box-sizing: border-box;
+        color: rgba(97, 94, 94, 0.795);
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        transition: 1.2s ease-in-out;
+        border-bottom: 4px solid transparent;
+
+        @media (max-width: 500px) {
+          font-size: 0.8rem;
+        }
+
+        &:hover {
+          padding: 0.4rem 1.2rem;
+          border-bottom: 4px solid rgb(110, 185, 95);
+          color: white;
+        }
+      }
+    }
+  }
+
+  .social-container {
+    width: 30%;
+    ul {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 1.2rem;
+
+      @media (max-width: 500px) {
+        font-size: 0.8rem;
+        gap: 8px;
+      }
+
+      @media (max-width: 300px) {
+        position: absolute;
+        top: 55px;
+        left: 110px;
+      }
+
+      li {
+        transition: 0.9s ease;
+
+        &:nth-child(1) > a {
+          color: #be267f;
+        }
+        &:nth-child(2) > a {
+          color: rgb(27, 110, 218);
+        }
+        &:nth-child(3) > a {
+          color: black;
+        }
+        &:nth-child(4) > a {
+          color: black;
+        }
+
+        &:hover {
+          transform: rotateZ(45deg) scale(1.4)
+            matrix(0.87, -0.9, 0, 0.87, 1.6, 3);
+        }
+      }
+    }
+  }
+}
