@@ -1,6 +1,4 @@
-I am developping a blog , it is not finish yet 
-
-you can see what it looks like , 
+##Small frontend website
 
 https://modnatur.netlify.app/
 
