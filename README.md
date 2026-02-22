@@ -1,4 +1,4 @@
-##Small frontend website
+Small frontend website
 
 https://modnatur.netlify.app/
 
